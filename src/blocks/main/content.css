@@ -1,0 +1,11 @@
+@import url('./places/section__places.css');
+@import url('./places/__list/places__list.css');
+@import url('./places/__list/__item/places__item.css');
+@import url('./profile/section__profile.css');
+@import url('./profile/__add-button/profile__add-button.css');
+@import url('./profile/__image/profile__image.css');
+@import url('./profile/__image/__image-button/progile__image-button.css');
+@import url('./profile/__info/profile__info.css');
+@import url('./profile/__info/__description/profile__description.css');
+@import url('./profile/__info/__edit-button/profile__edit-button.css');
+@import url('./profile/__info/__title/profile__title.css');
