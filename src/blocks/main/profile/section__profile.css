@@ -1,0 +1,9 @@
+.section__profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-block-start: 40px;
+    padding-block-end: 50px;
+    inline-size: 100%;
+}

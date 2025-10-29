@@ -1,0 +1,8 @@
+.profile__image {
+    margin-inline-end: 30px;
+    block-size: 120px;
+    inline-size: 120px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}

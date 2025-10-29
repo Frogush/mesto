@@ -1,1 +1,8 @@
 @import url('./__logo/header__logo.css');
+
+.header {
+  display: flex;
+  align-items: start;
+  min-height: 75px;
+  border-block-end: 1px solid #545454;
+}

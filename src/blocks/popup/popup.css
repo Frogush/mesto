@@ -3,5 +3,19 @@
 @import url('__content/__title/popup__title.css');
 @import url('__content/__form/popup__form.css');
 @import url('__content/__form/__button/popup__button.css');
-@import url('__content/__form/__input/popup__input.css');
-@import url('__content/__form/__input-error/popup__input-error.css');
+@import url('__content/__form/_label/popup__form_label.css');
+@import url('__content/__form/_label/__input/popup__input.css');
+@import url('__content/__form/_label/__input-error/popup__input-error.css');
+@import url('__content/__type/popup__content_type-image.css');
+@import url('__content/__image/popup__image.css');
+@import url('__content/__description/popup__description.css');
+
+.popup {
+    position: fixed;
+    z-index: 10;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 / 0.5);
+    inset: 0;
+}

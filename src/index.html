@@ -6,21 +6,21 @@
         <title>Mesto</title>
     </head>
     <body class="page">
-        <!--<div class="page__box">-->
+        <!--<div class="page__box"> Оставить до конца, вдруг пригодится-->
             <header class="header">
-                <img src="<%=require('./images/logo.svg')%>" alt="Логотип проекта масто" class="header__logo"> <!--Загрузил изображение-->
+                <img src="<%=require('./images/logo.svg')%>" alt="Логотип проекта масто" class="header__logo">
             </header>
             <main class="content">
                 <section class="section__profile">
                     <div class="profile__image" style="background-image: url('<%= require('./images/avatar.jpg') %>')"> <!--Загрузил фоновое изображение-->
-                        <button class="progile__image-button" type="button"></button>
+                        <button class="profile__image-button" type="button"></button>
                     </div>
                     <div class="profile__info">
-                        <h1 class="profile__title"></h1>
+                        <h1 class="profile__title">Темки Темки Темки Темки Темки ТЕМКИ</h1> <!--Добавил титл профиля-->
                         <button class="profile__edit-button" type="button"></button> 
-                        <p class="profile__description"></p>
+                        <p class="profile__description">Темки всякие ТОЧНО БЕЛЫЕ ИДИ КО МНЕ СЮДА</p> <!--Добавил описание профиля-->
                     </div>
-                    <button class="profile__add-button" type="button"></button>
+                    <button class="profile__add-button" type="button">+</button>
                 </section>
                 <section class="section__places">
                     <ul class="places__list"> <!--Карточки для вёрстки-->
@@ -32,8 +32,8 @@
                             <div class="card__description">
                                 <h2 class="card__title">Карачаевск</h2>
                                 <div class="card__wrapped-like">
-                                    <button class="card__like-button" type="button"></button>
-                                    <span class="card__like-counter">0</span>
+                                    <button class="card__like-button card__like-button_is-active" type="button"></button>
+                                    <span class="card__like-counter">1</span>
                                 </div>
                             </div>
                         </li>
@@ -106,57 +106,67 @@
                 </section>
             </main>
             <footer class="footer">
-                <p class="footer__copyright">© 2021 Mesto Russia</p>
+                <p class="footer__copyright">© 2025 Mesto Russia</p>
             </footer>
-            <div class="popup popup_type-edit-profile" style="display: none;">
-                <div class="popup__content">
+            <div class="popup popup__type-edit-profile">
+                <div class="popup__content popup__content_type-edit-profile">
                     <button class="popup__close-button" type="button"></button>
                     <h3 class="popup__title">Редактировать профиль</h3>
                     <form class="popup__form" name="edit-profile">
-                        <input class="popup__input" type="text" id="name-input" name="name" placeholder="Имя">
-                        <span class="popup__input-error"></span>
-                        <input class="popup__input" type="text" id="description-input" name="description" placeholder="Занятие">
-                        <span class="popup__input-error"></span>
-                        <button class="popup__button" type="submit"></button>
+                        <label class="popup__form_label">
+                            <input class="popup__input" type="text" id="name-input" name="name" placeholder="Имя">
+                            <span class="popup__input-error"></span>
+                        </label>
+                        <label class="popup__form_label">
+                            <input class="popup__input" type="text" id="description-input" name="description" placeholder="Занятие">
+                            <span class="popup__input-error"></span>
+                        </label>
+                        <button class="popup__button" type="submit">Сохранить</button>
                     </form>
                 </div>
             </div>
-            <div class="popup popup_type-edit-avatar" style="display: none;">
-                <div class="popup__content">
+            <div class="popup popup__type-edit-avatar">
+                <div class="popup__content popup__content_type-edit-avatar">
                     <button class="popup__close-button" type="button"></button>
                     <h3 class="popup__title">Обновить аватар</h3>
                     <form class="popup__form" name="edit-avatar">
-                        <input class="popup__input" type="url" id="avatar-url-input" name="link" placeholder="Ссылка на картинку">
-                        <span class="popup__input-error"></span>
-                        <button class="popup__button" type="submit"></button>
+                        <label class="popup__form_label">
+                            <input class="popup__input" type="url" id="avatar-url-input" name="link" placeholder="Ссылка на картинку">
+                            <span class="popup__input-error"></span>
+                        </label>
+                        <button class="popup__button" type="submit">Сохранить</button>
                     </form>
                 </div>
             </div>
-            <div class="popup popup_type-new-card" style="display: none;">
-                <div class="popup__content">
+            <div class="popup popup__type-new-card">
+                <div class="popup__content popup__content_type-new-card">
                     <button class="popup__close-button" type="button"></button>
                     <h3 class="popup__title">Новое место</h3>
                     <form class="popup__form" name="add-card">
-                        <input class="popup__input" type="text" id="place-name-input" name="place-name">
-                        <span class="popup__input-error"></span>
-                        <input class="popup__input" type="url" id="image-url-input" name="link">
-                        <span class="popup__input-error"></span>
-                        <button class="popup__button" type="submit"></button>
+                        <label class="popup__form_label">
+                            <input class="popup__input" type="text" id="place-name-input" name="place-name" placeholder="Название">
+                            <span class="popup__input-error"></span>
+                        </label>
+                        <label class="popup__form_label">
+                            <input class="popup__input" type="url" id="image-url-input" name="link" placeholder="Ссылка на картинку">
+                            <span class="popup__input-error"></span>
+                        </label>
+                        <button class="popup__button" type="submit">Сохранить</button>
                     </form>
                 </div>
             </div>
-            <div class="popup popup_type-image" style="display: none;">
-                <div class="popup__content">
+            <div class="popup">
+                <div class="popup__content popup__content_type-image">
                     <button class="popup__close-button" type="button"></button>
                     <img class="popup__image" src="" alt="">
                     <p class="popup__description"></p>
                 </div>
             </div>
-            <div class="popup popup_type-delete-card" style="display: none;">
-                <div class="popup__content">
+            <div class="popup">
+                <div class="popup__content popup__content_type-delete-card">
                     <button class="popup__close-button" type="button"></button>
-                    <h3 class="popup__title"></h3>
-                    <button class="popup__button" type="submit"></button>
+                    <h3 class="popup__title">Вы уверены?</h3>
+                    <button class="popup__button" type="submit">Да</button>
                 </div>
             </div>
         <!--</div>-->

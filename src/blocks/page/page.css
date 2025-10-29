@@ -1,3 +1,12 @@
 .page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    inline-size: 100%;
+    max-inline-size: 882px;
+    color: #fff;
     background-color: #000;
+    font-family: Inter, Arial, sans-serif;
+    padding-block: 45px;
 }

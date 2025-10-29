@@ -1,0 +1,9 @@
+.profile__title {
+    overflow: hidden;
+    line-height: 48px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 42px;
+    font-weight: 500;
+    grid-area: title;   
+}

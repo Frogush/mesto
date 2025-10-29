@@ -1,0 +1,16 @@
+.profile__add-button {
+    margin-left: auto;
+    block-size: 50px;
+    inline-size: 150px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    background: transparent url("../../../../images/add-icon.svg") center no-repeat;
+    background-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    justify-self: flex-end;
+}
+
+.profile__add-button:hover {
+    opacity: 0.6;
+}

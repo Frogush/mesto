@@ -6,3 +6,10 @@
 @import url('./__description/__wrapped-like/__like-counter/card__like-counter.css');
 @import url('./__image-button/card__image-button.css');
 @import url('./__image-button/__image/card__image.css');
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    color: #000;
+}

@@ -1,0 +1,13 @@
+.popup__content_type-image {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    block-size: auto;
+    inline-size: auto;
+    max-block-size: 75vh;
+    max-inline-size: 75vw;
+    border-radius: 0;
+    background-color: transparent;
+    background-size: cover;
+    gap: 10px;
+}
