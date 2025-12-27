@@ -1,4 +1,4 @@
-# mesto
+# mesto - test
 A small social gallery for posting and liking photos. Built with HTML/CSS/JS using WebPack
 
 ## ⚙️ Дополнения Webpack: лоадеры и плагины
